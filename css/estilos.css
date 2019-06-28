@@ -75,6 +75,7 @@ header #nav a{
 	margin-bottom: 2vw;
 	border: 1px;
 	transition: transform 2s;
+	border: 2px;
 }
 
 #img-sec-der:hover{

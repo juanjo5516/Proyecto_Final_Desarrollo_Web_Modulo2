@@ -37,6 +37,47 @@ header #nav a{
 	font-size: 2em;
 }
 
+#contenedor-imgp{
+	width: 100%;
+	background-color: #82c3a6;
+	text-align: center;
+}
+
+#img-principal{
+	width: 80%;
+	
+}
+
+#contenedor-imgsec{
+	width: 100%;
+	background-color: #d5c75f;
+	text-align: center;
+	display: flex;
+	border: 1px;
+}
+
+#img-sec-iz{
+	width: 70%;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	box-shadow: 3px 5px 10px 0 #82c3a6;
+	transition: transform 2s;
+}
+
+#img-sec-iz:hover{
+	transform: rotate(10deg);
+}
 
 
+#img-sec-der{
+	width: 70%;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	border: 1px;
+	transition: transform 2s;
+}
+
+#img-sec-der:hover{
+	transform: translate(20px,-5px);
+}
 

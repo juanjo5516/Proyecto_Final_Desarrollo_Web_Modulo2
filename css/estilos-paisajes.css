@@ -1,9 +1,3 @@
-*{
-	font-family: Dancing Script;
-	/*background-color:  #02010a;*/
-
-}
-
 header{
 	background-color: #5b7989;/*Establece el fondo de color #5b7989.*/
 	border-radius: 10px 10px 0 0; /*Aplica bordes redondeados en las esquinas superiores a 10px.*/
@@ -22,7 +16,6 @@ header #titulo{
 	/*display: inline-block;*/
 	height: 100%;
 }
-
 header #nav{
 	width: 30%;
 	/*background-color: aliceblue;*/
@@ -43,55 +36,6 @@ header #nav a{
 	font-size: 1.5em;
 }
 
-#contenedor-imgp{
-	width: 100%;
-	background-color: #82c3a6;
-	text-align: center;
-}
-
-#img-principal{
-	width: 80%;
-	
-}
-
-#contenedor-imgsec{
-	width: 100%;
-	background-color: #d5c75f;
-	text-align: center;
-	display: flex;
-	border: 1px;
-}
-
-#img-sec-iz{
-	width: 70%;
-	margin-top: 2vw;
-	margin-bottom: 2vw;
-	box-shadow: 3px 5px 10px 0 #82c3a6;
-	transition: transform 2s;
-}
-
-#img-sec-iz:hover{
-	transform: rotate(10deg);
-}
-
-
-#img-sec-der{
-	width: 70%;
-	margin-top: 2vw;
-	margin-bottom: 2vw;
-	border: 1px;
-	transition: transform 2s;
-	border: 2px;
-}
-
-#img-sec-der:hover{
-	transform: translate(20px,-5px);
-}
-
-footer{
-	background-color: #C6d5c5;
-}
-
 @media (min-width: 720px){	/*ESTE MEDIA QUERIE APLICA UNICAMENTE A COMPUTADORAS*/
 	body{
 	display: flex;
@@ -100,15 +44,20 @@ footer{
 	}
 	#contenido{
 		width: 900px;
-	}
-	footer{
 		display: flex;
-	}
+		flex-wrap: wrap;
 	
-	.contenedor-f{
-		width: 25%;
 	}
-
-
-
+	#galeria{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#galeria div{
+		width: 33.33%
+	}
+	#galeria div img{
+		width: 100%
+	}
 }

@@ -109,7 +109,7 @@ footer{
 
 #contenido{
 	animation-name: slidein;/*TODAS LAS PROPIEDADES DE ANIMATION*/
-	animation-duration: 4s;
+	animation-duration: 3s;
 }
 
 #imagen1 img {
@@ -145,6 +145,9 @@ animation-duration: 2s;
 	
 	.contenedor-f{
 		width: 25%;
+	}
+	p{
+		padding: 5px;
 	}
 }
 

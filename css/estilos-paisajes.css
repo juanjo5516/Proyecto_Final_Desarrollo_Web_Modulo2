@@ -71,7 +71,7 @@ header #nav a{
 
 #contenido{
 	animation-name: slidein;/*TODAS LAS PROPIEDADES DE ANIMATION*/
-	animation-duration: 4s;
+	animation-duration: 1s;
 }
 
 @media (min-width: 720px){	/*ESTE MEDIA QUERIE APLICA UNICAMENTE A COMPUTADORAS*/

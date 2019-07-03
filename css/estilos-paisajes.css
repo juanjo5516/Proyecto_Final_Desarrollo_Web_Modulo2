@@ -1,23 +1,27 @@
+*{
+	font-family: Dancing Script;
+	/*background-color:  #02010a;*/
+
+}
 header{
 	background-color: #5b7989;/*Establece el fondo de color #5b7989.*/
 	border-radius: 10px 10px 0 0; /*Aplica bordes redondeados en las esquinas superiores a 10px.*/
 	width: 100%;
 	display: flex;
-	height: 5vw;
+
 }
 
 header #titulo{
 	text-align: left;
 	color: white;
 	text-shadow: 2px 2px 2px #02010a; 
-	width: 70%;
 	/*background-color: blue;*/
 	flex-direction: row; /*ORDENA EN FILA POR MEDIO DE FLEX*/
 	/*display: inline-block;*/
 	height: 100%;
 }
 header #nav{
-	width: 30%;
+	width: 30%
 	/*background-color: aliceblue;*/
 	flex-direction: row; /*ORDENA EN FILA POR MEDIO DE FLEX*/
 	/*display: inline-block;*/
@@ -29,11 +33,12 @@ header #nav{
 
 header #nav a{
 	text-align: center;
-	height: 100%;
 	width: 33%;
+	color: white;
+}
+
+.activo{
 	text-decoration: none;
-	vertical-align: 50%;
-	font-size: 1.5em;
 }
 
 	#imagen1{/*APLICAR FILTROS*/
@@ -54,30 +59,40 @@ header #nav a{
 	}
 
 @media (min-width: 720px){	/*ESTE MEDIA QUERIE APLICA UNICAMENTE A COMPUTADORAS*/
+	header{
+		height: 5vw;
+	}
+	header #titulo{
+		width: 70%;
+	}
+	header #nav{
+		width: 30%;
+	}
+	header #nav a{
+		height: 50%;
+		display: flex;
+		align-items: baseline;
+		font-size: 1.5em;
+	}
 	body{
 	display: flex;
 	justify-content: center;
 	background-color: #02010a;
 	}
-	#contenido{
-		width: 900px;
-		display: flex;
-		flex-wrap: wrap;
-	
-	}
 	#galeria{
-		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
 	#galeria div{
-		width: 33.33%
+		width: 33.33%;
 	}
 	#galeria div img{
-		width: 100%
+		width: 100%;
 	}
-
+	#contenido{
+		width: 900px;
+	}
 	footer{
 		display: flex;
 	}
@@ -85,6 +100,56 @@ header #nav a{
 	.contenedor-f{
 		width: 25%;
 	}
-}
 
+}
+@media (max-width: 719px){	/*ESTE MEDIA QUERIE APLICA UNICAMENTE A MOVIL*/
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	header #titulo{
+		width: 100%;
+		text-align: center;
+	}
+	header #nav{
+		width: 100%}
+
+	header #nav a{
+		font-size: 1em;
+		padding-bottom: 0.8em;
+		padding-top: 0.8em;
+	}
+	body{
+	display: flex;
+	justify-content: center;
+	background-color: #02010a;
+	}
+
+	#contenedor-imgsec{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contenido{
+		width: 100%;
+	}
+	#galeria{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	#galeria div img{
+		width: 100%
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.contenedor-f{
+		width: 100%;
+	}
+}
 
